@@ -23,20 +23,20 @@ export default async function SectionItemPage({
   return (
     <AppShell>
       <section className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
-        <p className="text-sm font-medium uppercase tracking-[0.2em] text-slate-500">
+        <p className="text-xs font-medium uppercase tracking-[0.2em] text-slate-500">
           {section.title}
         </p>
-        <h1 className="mt-3 text-4xl font-semibold tracking-tight text-slate-900">
+        <h1 className="mt-3 text-3xl font-semibold tracking-tight text-slate-900">
           {apiItem?.name ?? localItem.title}
         </h1>
-        <p className="mt-4 max-w-3xl text-base leading-7 text-slate-600">
+        <p className="mt-4 max-w-3xl text-sm leading-6 text-slate-600">
           {apiItem?.description ?? localItem.description}
         </p>
       </section>
 
       <section className="mt-8 rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
-        <h2 className="text-2xl font-semibold text-slate-900">Template Content</h2>
-        <p className="mt-4 text-sm leading-7 text-slate-600">
+        <h2 className="text-xl font-semibold text-slate-900">Template Content</h2>
+        <p className="mt-4 text-sm leading-6 text-slate-600">
           This page is a real route and is ready for forms, tables, search, or
           editor components. Replace this placeholder with the actual module UI.
         </p>
@@ -44,4 +44,3 @@ export default async function SectionItemPage({
     </AppShell>
   );
 }
-
